@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#contact {
+  background-color: #c7ffff;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.contact-item {
+  position: relative;
+}
+
+.item {
+  text-align: center;
+  background-color: white;
+}
+.img {
+  position: relative;
+}
+
+.item .img .img-txt {
+  color: white;
+  position: absolute;
+  /* color: rgb(7, 216, 216); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.item .img .img-txt span {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.item .money {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+}
+
+.item .money p {
+  padding-top: 17px;
+  margin: 0;
+  font-size: 22px;
+}
+
+.item .money span {
+  font-size: 12px;
+  opacity: 0.6;
+  color: gray;
+}
+
+.item-ocean p {
+  color: rgb(7, 216, 216);
+}
+
+.item-mount p {
+  color: rgba(255, 0, 157, 0.678);
+}
+
+.item-mount .item-logo img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  z-index: 99;
+}
+
+.item-logo {
+  position: relative;
+}
+.item-logo span {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  color: white;
+  padding-top: 3px;
+}
+
+.item-forest p {
+  color: green;
+}
+
+.item img {
+  width: 300px;
+  height: 100%;
+}
+
+.item-txt p {
+  color: black;
+  padding: 10px 0;
+  opacity: 0.6;
+}
+
+.item-txt p.bg-clor {
+  background-color: rgb(241, 236, 236);
+}
+
+.title-txt {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.title-txt p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Button  */
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.item-ocean button {
+  border: 1px solid rgb(0, 195, 255);
+  color: rgb(0, 195, 255);
+}
+
+.item-mount button {
+  background-color: purple;
+  border: none;
+  color: white;
+}
+
+.item-forest button {
+  color: green;
+  border: 1px solid green;
+}
