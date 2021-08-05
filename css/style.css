@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #contact {
@@ -9,16 +10,20 @@
 }
 
 .contact {
-  display: flex;
+  /* display: flex; */
   width: 80%;
-  display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0 auto;
   padding: 50px 0;
+  text-align: center;
 }
 
 .contact-item {
   position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+  width: auto;
 }
 
 .item {
@@ -36,7 +41,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .item .img .img-txt span {
@@ -46,7 +51,7 @@
 
 .item .money {
   position: absolute;
-  top: -40px;
+  top: -21px;
   right: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -73,7 +78,7 @@
   color: rgb(7, 216, 216);
 }
 
-.item-mount p {
+.item-mount .money p {
   color: rgba(255, 0, 157, 0.678);
 }
 
@@ -107,24 +112,34 @@
   height: 100%;
 }
 
+.title-txt {
+  margin: 0;
+  padding: 20px 0;
+  opacity: 0.6;
+}
+
+.title-txt h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
 .item-txt p {
   color: black;
   padding: 10px 0;
-  opacity: 0.6;
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 .item-txt p.bg-clor {
   background-color: rgb(241, 236, 236);
 }
 
-.title-txt {
-  margin: 0;
-  padding: 20px 0;
-}
-
-.title-txt p {
+.title-txt span {
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
 
 /* Button  */
@@ -140,15 +155,29 @@ button {
 .item-ocean button {
   border: 1px solid rgb(0, 195, 255);
   color: rgb(0, 195, 255);
+  transition: 0.3s;
+}
+.item-ocean button:hover {
+  background-color: rgb(0, 195, 255);
+  color: white;
 }
 
 .item-mount button {
+  border: 1px solid purple;
+  color: purple;
+  transition: 0.3s;
+}
+.item-mount button:hover {
   background-color: purple;
-  border: none;
   color: white;
 }
 
 .item-forest button {
   color: green;
   border: 1px solid green;
+  transition: 0.3s;
+}
+.item-forest button:hover {
+  color: white;
+  background-color: green;
 }
